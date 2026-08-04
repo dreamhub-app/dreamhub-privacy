@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>RemBridge — Privacy Policy</title>
+</head>
+<body>
+
+<h1>RemBridge — Privacy Policy</h1>
+<p><em>Last updated: August 2026</em></p>
+
+<p>
+RemBridge is developed by Dream Hub. This policy explains what data
+RemBridge accesses, how it is used, and — just as importantly — what is
+never collected, stored, or shared.
+</p>
+
+<h2>1. What RemBridge does</h2>
+<p>
+RemBridge is a companion app to Lucid Dream Trainer (LDT). It monitors sleep
+overnight using the phone's accelerometer, screen off, to estimate sleep-cycle
+boundaries. When it detects a likely REM period, it sends a signed local
+broadcast that only LDT (verified by its app certificate) can receive, so LDT
+can play a sound cue at the right moment. RemBridge does not itself play any
+sound or perform any lucid-dreaming exercise — that is entirely LDT's role.
+</p>
+
+<h2>2. Data RemBridge processes</h2>
+
+<h3>2.1 Motion data (accelerometer)</h3>
+<p>
+While a recording is active, RemBridge reads accelerometer motion values to
+classify the phone's stillness/movement over time. This data is processed
+and stored only on the device, in a local file, so the app can show the
+user their own night's data and detect sleep-cycle boundaries. It is never
+transmitted anywhere.
+</p>
+
+<h3>2.2 Microphone (RECORD_AUDIO) — optional</h3>
+<p>
+Microphone access is an optional, secondary feature, used to detect
+discrete acoustic events overnight (movement in bed, snoring, coughing,
+and other short sounds), to help the user understand whether a sound cue
+disturbed their sleep.
+</p>
+<p>
+<strong>Raw audio is never written to a file, saved as a recording, or
+transmitted anywhere.</strong> Short audio buffers are analyzed in memory,
+in real time, for their amplitude only, and immediately discarded. Only the
+result — a timestamp and an event category (e.g. "snoring detected at
+02:14") — is saved locally. No audio, waveform, or voice content is ever
+part of that data.
+</p>
+<p>
+Microphone-based event detection is off by default and can be turned on
+or off independently from accelerometer-based sleep tracking (which does
+not require microphone access at all), through a dedicated setting shown
+during onboarding and in the app's advanced settings.
+</p>
+
+<h3>2.3 Wake-up diary (optional, user-entered)</h3>
+<p>
+RemBridge offers a short set of multiple-choice questions each morning
+(e.g. how well the user slept, whether they woke up, whether they heard
+the sound cue, whether they were aware they were dreaming). These answers,
+if provided, are stored locally on the device. If the user indicates they
+did not sleep well, that night's raw motion/audio data is discarded
+automatically and is not analyzed further.
+</p>
+
+<h2>3. What RemBridge does NOT do</h2>
+<ul>
+  <li>RemBridge has no backend server of its own. All processing happens
+      entirely on the user's device.</li>
+  <li>RemBridge does not create user accounts and does not require sign-in.</li>
+  <li>RemBridge does not use advertising or analytics SDKs, and does not
+      show ads.</li>
+  <li>RemBridge does not sell, rent, or share personal data with any third
+      party.</li>
+  <li>RemBridge does not record or store raw audio, under any
+      circumstance (see 2.2).</li>
+</ul>
+
+<h2>4. Communication with Lucid Dream Trainer (LDT)</h2>
+<p>
+RemBridge and LDT communicate exclusively through a local, signed Android
+broadcast confined to the device — this is not a network connection and no
+data leaves the phone as part of it. RemBridge verifies LDT's app
+certificate before accepting or sending anything, so unrelated apps cannot
+listen in or impersonate LDT.
+</p>
+
+<h2>5. Data retention and deletion</h2>
+<p>
+Data stays on the device until the user deletes it — from within the app,
+by clearing the app's storage in Android Settings, or by uninstalling
+RemBridge. RemBridge automatically keeps only the most recent nights'
+detailed data in its saved-nights history and removes older ones; it does
+not accumulate this data indefinitely. RemBridge is not included in any
+cloud backup operated by Dream Hub, because Dream Hub operates no such
+backup.
+</p>
+
+<h2>6. Children's privacy</h2>
+<p>
+RemBridge is intended for users aged 18 and over, consistent with its
+companion app Lucid Dream Trainer, and is not directed at children.
+</p>
+
+<h2>7. Changes to this policy</h2>
+<p>
+If this policy changes, the updated version will be posted at the same
+URL, with a revised "Last updated" date above.
+</p>
+
+<h2>8. Contact</h2>
+<p>
+Dream Hub<br>
+Email: automated.codex@gmail.com
+</p>
+
+</body>
+</html>
